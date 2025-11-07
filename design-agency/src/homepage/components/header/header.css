@@ -1,0 +1,145 @@
+/* ---------- Header Styles ---------- */
+.propertypro-header {
+  background-color: #D7F5DC;             /* Section background */
+  color: #000000;                         /* Default text */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  min-height: 80px;                       /* Matches the reference height */
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+.header-logo {
+  height: 48px;
+  width: auto;
+  margin-left: 20px;
+}
+
+/* Navbar Links */
+.navbar-nav {
+  gap: 40px;
+}
+
+.nav-link {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000 !important;              /* Black text */
+  padding: 0.5rem 0 !important;
+  position: relative;
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+/* Active link styling */
+.nav-link.active {
+  color: #000000 !important;
+  opacity: 0.85;
+}
+
+/* Hover */
+.nav-link:hover {
+  color: #000000 !important;
+  opacity: 0.75;
+}
+
+/* Optional separate 'Home' link spacing */
+.home-link {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  margin-left: 35px;
+  margin-bottom: -10px;
+}
+
+/* Small caret style (use after Services) */
+.nav-link .caret-down {
+  display: inline-block;
+  margin-left: .35rem;
+  width: 0;
+  height: 0;
+  border-left: .28rem solid transparent;
+  border-right: .28rem solid transparent;
+  border-top: .32rem solid #000000;       /* black caret */
+  vertical-align: middle;
+}
+
+/* ---------- CTA Buttons ---------- */
+.btn-login {
+  border: 1.5px solid #20B15A;
+  background: transparent;
+  color: #000000 !important;
+  border-radius: 10px;
+  padding: .48rem 1.15rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  white-space: nowrap;
+  transition: background-color 0.25s ease, opacity 0.25s ease;
+}
+
+.btn-login:hover {
+  background-color: rgba(32, 177, 90, 0.08);
+  color: #000000 !important;
+}
+
+.btn-register {
+  background-color: #20B15A !important;   /* Required green */
+  color: #ffffff !important;
+  border: 1.5px solid #20B15A;
+  border-radius: 10px;
+  padding: .48rem 1.15rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  white-space: nowrap;
+  transition: filter 0.25s ease;
+}
+
+.btn-register:hover {
+  filter: brightness(0.95);
+}
+
+/* ---------- Dropdown Styles ---------- */
+.nav-item.dropdown .dropdown-menu {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  padding: 0.5rem 0;
+}
+
+.dropdown-item {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  color: #000000;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+  color: #000000;
+}
+
+/* ---------- Accessibility & UX ---------- */
+body.menu-open {
+  overflow: hidden;
+}
+
+.nav-link:focus,
+.btn-login:focus,
+.btn-register:focus {
+  outline: 2px solid #20B15A;            /* Accessible focus ring */
+  outline-offset: 2px;
+}
+
+/* ---------- Fine-tuning spacing ---------- */
+.navbar-nav {
+  gap: 48px;
+}
